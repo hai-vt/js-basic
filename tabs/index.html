@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<head>
+    <meta charset = "UTF-8">
+    <title>Js Tabs Demo</title>
+    <link rel = "stylesheet"
+          type = "text/css"
+          href = "../style.css" />
+    <script src="../lib/jquery/jquery-3.4.0.min.js"></script>
+</head>
+<body>
+    <div class="tabs">
+        <div class="tab-title">
+            <ul>
+                <li class="tab-active"><a href="#strong-tab">Strong</a></li>
+                <li><a href="#section-tab">Section</a></li>
+                <li><a href="#source-tab">Source</a></li>
+            </ul>
+        </div>
+        <div class="tab-content-group">
+            <div id="strong-tab" class="tab-content tab-content-active">
+                Strong content tab
+            </div>
+            <div id="section-tab" class="tab-content">
+                Section content tab
+            </div>
+            <div id="source-tab" class="tab-content">
+                Suorce content tab
+            </div>
+        </div>
+    </div>
+
+<script>
+    $('.tabs .tab-title a').on('click', function (event) {
+        event.preventDefault();
+
+        $('.tab-active').removeClass('tab-active');
+        $(this).parent().addClass('tab-active');
+        $('.tab-content-group .tab-content').removeClass('tab-content-active');
+        $($(this).attr('href')).addClass('tab-content-active');
+    });
+</script>
+</body>
+</html>
+
+
+

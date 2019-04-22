@@ -1,0 +1,20 @@
+.header-nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.header-nav ul li{
+    list-style: none;
+    padding: 0 10px;
+}
+
+/* tabs */
+.tabs { margin-top: 50px;}
+.tab-title ul {padding: 0 20px;display: flex; justify-content: center;max-width: 500px; margin: 0 auto;background: #ddd; border: 1px solid #ddd; border-bottom: 0;}
+.tab-title ul li {list-style: none;}
+.tab-title ul li a {text-decoration: none; display: block; padding: 5px 10px;}
+.tab-title ul li.tab-active {background: #fff;}
+.tab-title ul li.tab-active a{color: red;}
+.tab-content-group {max-width: 500px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-top: 0;}
+.tab-content-group .tab-content {display: none; text-align: center;}
+.tab-content-group .tab-content.tab-content-active {display: block;}
