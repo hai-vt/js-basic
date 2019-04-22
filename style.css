@@ -18,3 +18,11 @@
 .tab-content-group {max-width: 500px; margin: 0 auto; padding: 20px; border: 1px solid #ddd; border-top: 0;}
 .tab-content-group .tab-content {display: none; text-align: center;}
 .tab-content-group .tab-content.tab-content-active {display: block;}
+
+
+/* Panel */
+.header-panel {display: flex; justify-content: flex-end;max-width: 1200px; margin: 0 auto;}
+.dropdown-title {padding: 0 10px; cursor: pointer;}
+.dropdown-item {position: relative;}
+.dropdown-content {display: none; position: absolute; top: 100%; right: 0;width: 300px; border: 1px solid #ddd; padding: 20px;}
+.dropdown-item.active .dropdown-content {display: block;}
