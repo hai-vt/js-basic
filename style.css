@@ -27,7 +27,7 @@ body {
 
 /* Panel */
 .header-panel {display: flex; justify-content: flex-end;max-width: 1200px; margin: 0 auto;}
-.dropdown-title {padding: 0 10px; cursor: pointer;}
+.dropdown-title {padding: 5px 10px; cursor: pointer;}
 .dropdown-item {position: relative;}
 .dropdown-content {display: none; position: absolute; top: 100%; right: 0;width: 300px; border: 1px solid #ddd; padding: 20px;}
 .dropdown-item.active .dropdown-content {display: block;}
